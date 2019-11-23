@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>281679572236-ljoplued70nj6ku212rv6b4b40710rm3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.281679572236-ljoplued70nj6ku212rv6b4b40710rm3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDqsT6e2h7viu32O9LrJd8NI97vUXjmeO8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>281679572236</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.samson6552-gmail.com.FirebaseTaskApp</string>
+	<key>PROJECT_ID</key>
+	<string>fir-taskapp-cde4c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-taskapp-cde4c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:281679572236:ios:94a43a310da21f506ded29</string>
+	<key>DATABASE_URL</key>
+	<string>https://fir-taskapp-cde4c.firebaseio.com</string>
+</dict>
+</plist>
