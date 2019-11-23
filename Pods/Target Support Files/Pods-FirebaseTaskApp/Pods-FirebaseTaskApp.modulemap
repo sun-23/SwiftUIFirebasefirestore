@@ -1,0 +1,6 @@
+framework module Pods_FirebaseTaskApp {
+  umbrella header "Pods-FirebaseTaskApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

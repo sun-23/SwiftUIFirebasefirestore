@@ -108,7 +108,7 @@ struct CardView: View {
                     .multilineTextAlignment(.leading)
                     .frame(minWidth: 0,maxWidth: .infinity, alignment: .leading)
                     .lineLimit(nil)
-                Text(Data.day)
+                Text("Due Date: \(Data.day)")
                 .foregroundColor(.white)
                     .font(.system(size: 30, weight: .regular , design: .default))
                 .multilineTextAlignment(.leading)
@@ -192,7 +192,7 @@ struct PostView: View {
                             Text("Post")
                             TextField("Enter Posts",text: $posts)
                         }
-                        DatePicker(selection: $day,in: ...Date(), displayedComponents: .date, label: {Text("")})
+                        DatePicker(selection: $day,in: Date()..., displayedComponents: .date, label: {Text("")})
                         
                         Button(action: {
                             self.isPresenting = false
