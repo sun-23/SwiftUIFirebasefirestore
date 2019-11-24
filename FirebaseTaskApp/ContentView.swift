@@ -79,7 +79,7 @@ struct ContentView: View {
              .blur(radius: self.showMenu ? 10 : 0)
 
             ManuView(showManu: self.$showMenu)
-        }.edgesIgnoringSafeArea(.all)
+        }//.edgesIgnoringSafeArea(.all)
     }
 }
 
