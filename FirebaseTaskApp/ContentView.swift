@@ -64,6 +64,7 @@ struct ContentView: View {
                       }
                   }.padding(40)
                 }.animation(.spring())
+                .frame(width: width, height: 360)
                 
                 Button(action: {
                     print("Reload")
