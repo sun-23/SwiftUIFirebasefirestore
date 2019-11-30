@@ -27,7 +27,7 @@ class DataStore : ObservableObject {
                 print("Error \(err)")
             } else {
                 for document in Snapshort!.documents {
-                    print(document.data())
+                    //print(document.data())
 
                     let id  = document.get("id") as? Int
                     let Title = document.get("Title") as? String
@@ -39,6 +39,8 @@ class DataStore : ObservableObject {
                     self.dataArr.append(createData)
                     
                 }
+                
+                //print(self.dataArr)
             }
         }
         

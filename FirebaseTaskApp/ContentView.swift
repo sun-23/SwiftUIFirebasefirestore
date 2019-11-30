@@ -54,17 +54,14 @@ struct ContentView: View {
                 }.padding(40)
                 
                 //MARK: CardScroll
-                ScrollView(.horizontal, showsIndicators: false) {
-                  HStack {
-                    ForEach(Array.dataArr) { data in
-                        GeometryReader { geometry in
+                ScrollView(.horizontal,showsIndicators: false) {
+                    HStack {
+                        ForEach(Array.dataArr ,id: \.id) { data in
                             CardView(Data: data)
-                                .rotation3DEffect(Angle(degrees: (Double(geometry.frame(in: .global).minX) - 40 ) / -40), axis: (x: 0, y: 10.0, z: 0))
-                        }.frame(width: 300, height: 360)
-                      }
-                  }.padding(40)
-                }.animation(.spring())
-                .frame(width: width, height: 360)
+                                .frame(width: 300 , height: 360)
+                         }
+                     }.padding()
+                }
                 
                 Button(action: {
                     print("Reload")
