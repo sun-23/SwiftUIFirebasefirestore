@@ -11,6 +11,7 @@ import SwiftUI
 var width = UIScreen.main.bounds.maxX
 var height = UIScreen.main.bounds.maxY
 
+//MARK: MainView
 struct ContentView: View {
     @State var showMenu: Bool = false
     @State var isPresentingPostScreen: Bool = false
@@ -52,6 +53,7 @@ struct ContentView: View {
                     
                 }.padding(40)
                 
+                //MARK: CardScroll
                 ScrollView(.horizontal, showsIndicators: false) {
                   HStack {
                     ForEach(Array.dataArr) { data in
@@ -82,6 +84,8 @@ struct ContentView: View {
         }//.edgesIgnoringSafeArea(.all)
     }
 }
+
+//MARK: CardView
 
 struct CardView: View {
     
@@ -118,6 +122,8 @@ struct CardView: View {
         }
     }
 }
+
+//MARK: ManuView
 
 struct ManuView: View {
     
@@ -160,6 +166,8 @@ struct ManuView: View {
         .animation(.spring())
     }
 }
+
+//MARK: PostView
 
 struct PostView: View {
     
