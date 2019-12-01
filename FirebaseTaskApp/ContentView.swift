@@ -22,6 +22,7 @@ struct ContentView: View {
         ZStack {
             VStack(alignment: .center){
                 HStack(alignment: .firstTextBaseline) {
+                    //MARK: Head BTN
                     Button(action: {
                         self.showMenu.toggle()
                     }, label: {
@@ -51,18 +52,20 @@ struct ContentView: View {
                         PostView(isPresenting: self.$isPresentingPostScreen)
                     })
                     
-                }.padding(40)
+                }.padding(.horizontal,40)
                 
                 //MARK: CardScroll
                 ScrollView(.horizontal,showsIndicators: false) {
-                    HStack {
+                    HStack() {
                         ForEach(Array.dataArr ,id: \.id) { data in
                             CardView(Data: data)
-                                .frame(width: 300 , height: 360)
                          }
-                     }.padding()
+                    }.frame(height: 450)
+                        .padding(.leading,40)
+                        .animation(.spring())
                 }
                 
+                //MARK: Bottom BTN
                 Button(action: {
                     print("Reload")
                     self.Array.Reload()

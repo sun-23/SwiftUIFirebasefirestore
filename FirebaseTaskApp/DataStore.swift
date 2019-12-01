@@ -20,7 +20,7 @@ class DataStore : ObservableObject {
     func Reload(){
         
         //Reset Array
-        dataArr = [DataArray]()
+        dataArr.removeAll()
         
         db.collection("Post").getDocuments { (Snapshort, err) in
             if let err = err {
@@ -40,7 +40,7 @@ class DataStore : ObservableObject {
                     
                 }
                 
-                //print(self.dataArr)
+                print(self.dataArr)
             }
         }
         
