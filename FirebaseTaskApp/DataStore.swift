@@ -17,6 +17,10 @@ class DataStore : ObservableObject {
     @Published
     var dataArr = [DataArray]()
     
+    init() {
+        Reload()
+    }
+    
     func Reload(){
         
         //Reset Array
